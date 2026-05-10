@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB Electrical</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="topbar">
+        <h1>Professional Electrical Services in West Los Angeles</h1>
+        <nav class="nav">
+            <div id="logo" class="logo">
+                <img src="../images/logo.png">
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <span class="services">Services</span>
+                    <div class="drop-downcontent">
+                        <a href="../services/residential_electrical.html">Residential Electrical</a>
+                        <a href="../services/commercial_electrical.html">Commercial Electrical</a>
+                        <a href="../services/panel_upgrades.html">Panel Upgrades</a>
+                        <a href="../services/evcharging_electrical.html">EV Charging Installation</a>
+                        <a href="../services/lighting_installations.html">Lighting Installation</a>
+                        <a href="../services/electrical_troubleshooting.html">Electrical Troubleshooting</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <span class="serviced-cities">Cities Serviced</span>
+                    <div class="drop-downcontent">
+                        <a href="../servicing-areas/west_los_angeles.html">West Los Angeles</a>
+                        <a href="../servicing-areas/santamonica.html">Santa Monica</a>
+                        <a href="../servicing-areas/venice_beach.html">Venice Beach</a>
+                        <a href="../servicing-areas/malibu.html">Malibu</a>
+                        <a href="../servicing-areas/westwood.html">Westwood</a>
+                    </div>
+                </li>
+                <li><a href="../aboutus.html">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../callnow.html">Call Now</a></li>
+            </ul>
+            <div id="signIn" class="SignIn">
+                <button type="button" onclick="signIn()" class="icon-btn">
+                    <i class="fa-solid fa-circle-user"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="page-content">
+            <h2>Panel Work &amp; New Circuits</h2>
+            <p>Adding a new appliance, EV charger, hot tub, or workshop circuit? AB Electrical runs new circuits straight from your panel — including a standard breaker and a clean install up to 15 feet from the panel. For full panel replacements, we'll come out, look at your existing service, and quote it on-site.</p>
+
+            <h3>New Circuit Pricing</h3>
+            <p>Each new circuit price below includes labor up to 15 feet from the panel, one receptacle, and a standard Siemens or Murray circuit breaker. Additional length and additional outlets are quoted separately.</p>
+            <ul>
+                <li><strong>120V 20A New Circuit</strong> — $350</li>
+                <li><strong>220V 30A New Circuit</strong> — $450</li>
+                <li><strong>220V 50A New Circuit</strong> — $550</li>
+            </ul>
+
+            <h3>Sump Pump Connections</h3>
+            <ul>
+                <li><strong>120V Sump Pump Connection</strong> (up to 20' from existing power) — $250</li>
+                <li><strong>220V Sump Pump Connection</strong> (up to 20' from existing power) — $350</li>
+            </ul>
+            <p><em>Material costs additional if needed.</em></p>
+
+            <h3>Bell Boxes &amp; Junction Work</h3>
+            <ul>
+                <li><strong>Single Gang 1/2" Knockouts</strong> — $40</li>
+                <li><strong>Two Gang 1/2" Knockouts</strong> — $50</li>
+                <li><strong>Single Gang 3/4" Knockouts</strong> — $50</li>
+                <li><strong>Two Gang 3/4" Knockouts</strong> — $80</li>
+                <li><strong>4/0 Bell Box (1/2" by 3/4")</strong> — quoted on-site</li>
+            </ul>
+            <p><em>Connectors and cover plates are an additional cost.</em></p>
+
+            <h3>Full Panel Replacement</h3>
+            <p>Panel replacements vary widely based on existing service size, utility coordination, permitting, and access. We don't list a flat rate because every panel is different. Call us at <a href="tel:6263948797">(626) 394-8797</a> for a free on-site assessment and a written quote.</p>
+
+            <h3>Why Choose AB Electrical</h3>
+            <p>Panel and circuit work is not a place to cut corners. We're licensed (#1094589) and bonded (#G7395408), pull every required permit, and use standard Siemens or Murray breakers for compatibility and easy future service.</p>
+            <p><em>All prices listed are starting prices for the service described and reflect labor for a standard install. Actual cost may vary based on existing wiring conditions, accessibility, additional materials, and home-run distance. We always provide a clear quote before starting work.</em></p>
+        </section>
+        <div class="cta-block">
+            <div class="gradient-divider"></div>
+            <h3 class="ctaheader" style="color: white;">Need Service? Get a Free Estimate Today!</h3>
+            <p><a href="tel:6263948797">📞 (626)-394-8797</a></p>
+            <p><a href="mailto:abelectricco22@gmail.com">✉️ abelectricco22@gmail.com</a></p>
+            <div class="gradient-divider"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="../images/logo.png">
+        </div>
+        <div class="footer-hours">
+            <p>Hours of Operation:</p>
+            <p>Monday - Friday: 8am - 6pm</p>
+            <p>Saturday: 9am - 4pm</p>
+            <p>Sunday: Closed</p>
+        </div>
+    </footer>
+    <!-- LOG IN MODAL -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <form action="#">
+                <label for="email">Please enter your email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Sign In">
+                <span onclick="closeModal()" class="close">&times;</span>
+            </form>
+        </div>
+    </div>
+    <script src="../customersignin.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB Electrical</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="topbar">
+        <h1>Professional Electrical Services in West Los Angeles</h1>
+        <nav class="nav">
+            <div id="logo" class="logo">
+                <img src="images/logo.png">
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <span class="services">Services</span>
+                    <div class="drop-downcontent">
+                        <a href="services/residential_electrical.html">Residential Electrical</a>
+                        <a href="services/commercial_electrical.html">Commercial Electrical</a>
+                        <a href="services/panel_upgrades.html">Panel Upgrades</a>
+                        <a href="services/evcharging_electrical.html">EV Charging Installation</a>
+                        <a href="services/lighting_installations.html">Lighting Installation</a>
+                        <a href="services/electrical_troubleshooting.html">Electrical Troubleshooting</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <span class="serviced-cities">Cities Serviced</span>
+                    <div class="drop-downcontent">
+                        <a href="servicing-areas/west_los_angeles.html">West Los Angeles</a>
+                        <a href="servicing-areas/santamonica.html">Santa Monica</a>
+                        <a href="servicing-areas/venice_beach.html">Venice Beach</a>
+                        <a href="servicing-areas/malibu.html">Malibu</a>
+                        <a href="servicing-areas/westwood.html">Westwood</a>
+                    </div>
+                </li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="callnow.html">Call Now</a></li>
+            </ul>
+            <div id="signIn" class="SignIn">
+                <button type="button" onclick="signIn()" class="icon-btn">
+                    <i class="fa-solid fa-circle-user"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="page-content">
+            <h2>Contact Us</h2>
+            <p>Have a question or need a quote? Reach out using the info below or send us a message — we'll get back to you as soon as possible.</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>📞 <a href="tel:6263948797">(626) 394-8797</a></p>
+                    <p>✉️ <a href="mailto:abelectricco22@gmail.com">abelectricco22@gmail.com</a></p>
+                    <p>📍 Serving West Los Angeles &amp; surrounding areas</p>
+                    <h3>Hours</h3>
+                    <p>Mon - Fri: 8am - 6pm</p>
+                    <p>Saturday: 9am - 4pm</p>
+                    <p>Sunday: Closed</p>
+                    <h3>License &amp; Bond</h3>
+                    <p>License # 1094589<br>Bond # G7395408</p>
+                </div>
+                <form class="contact-form" action="#" onsubmit="event.preventDefault(); alert('Thanks! We will be in touch soon.');">
+                    <h3>Send a Message</h3>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                    <textarea name="message" placeholder="Tell us about your project or issue..." required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26446.944255610448!2d-118.46966368837994!3d34.047256152633146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb774ba0772d%3A0x29f7b87911891dde!2sWest%20Los%20Angeles%2C%20Los%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1778439019844!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="images/logo.png">
+        </div>
+        <div class="footer-hours">
+            <p>Hours of Operation:</p>
+            <p>Monday - Friday: 8am - 6pm</p>
+            <p>Saturday: 9am - 4pm</p>
+            <p>Sunday: Closed</p>
+        </div>
+    </footer>
+    <!-- LOG IN MODAL -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <form action="#">
+                <label for="email">Please enter your email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Sign In">
+                <span onclick="closeModal()" class="close">&times;</span>
+            </form>
+        </div>
+    </div>
+    <script src="customersignin.js"></script>
+</body>
+</html>

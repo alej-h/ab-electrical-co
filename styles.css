@@ -1,0 +1,918 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Russo One', sans-serif;
+  color: #111;
+  overflow-x: hidden;
+}
+
+/* ===== HEADER BANNER ===== */
+h1 {
+  text-align: center;
+  background-image: linear-gradient(to right, #e4b047, #cb7a3b, #b84c38);
+  font-family: 'Russo One', sans-serif;
+  font-size: 50px;
+  padding: 20px;
+  border: 15px solid black;
+}
+
+/* ===== TOPBAR ===== */
+.topbar {
+  background: #2a2a2a;
+  border-bottom: 4px solid #D4A017;
+}
+
+/* ===== NAV ===== */
+.nav {
+  display: flex;
+  padding: 14px 18px;
+  align-items: center;
+  position: relative;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex: 1;
+  font-size: 22px;
+}
+
+.nav a,
+.dropdown>span {
+  color: #D4A017;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== DROPDOWNS ===== */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.drop-downcontent {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #111;
+  border: 2px solid #000;
+  min-width: 180px;
+  z-index: 1000;
+}
+
+.drop-downcontent a {
+  display: block;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #D4A017;
+}
+
+.dropdown:hover .drop-downcontent {
+  display: block;
+}
+
+.dropdown>span {
+  font-family: 'Russo One', sans-serif;
+  background: #2a2a2a;
+  color: #D4A017;
+  cursor: default;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+/* ===== SIGN IN ===== */
+.icon-btn {
+  background: none;
+  border: none;
+  color: #D4A017;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ===== HAMBURGER — hidden on desktop ===== */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #D4A017;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 4px 8px;
+  margin-left: auto;
+}
+
+/* ===== MODAL ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 25px;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* ===== SWIPER ===== */
+.swiper {
+  width: 100%;
+  height: 800px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 800px;
+}
+
+.slide-img1 {
+  object-position: top;
+}
+
+.slide-img2 {
+  object-position: bottom;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 10;
+}
+
+/* ===== TICKER ===== */
+.ticker-wrapper {
+  background: #1e1e1e;
+  overflow: hidden;
+  padding: 25px 0;
+  border-top: 3px solid #D4A017;
+  border-bottom: 3px solid #D4A017;
+}
+
+.ticker-content {
+  display: flex;
+  gap: 60px;
+  white-space: nowrap;
+  animation: ticker 20s linear infinite;
+}
+
+.ticker-content span {
+  color: #D4A017;
+  font-family: 'Russo One', sans-serif;
+  font-size: 32px;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ===== WHY US ===== */
+section.introduction {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  line-height: 1.7;
+  padding: 60px 80px;
+  background-color: #321a0b;
+  color: white;
+}
+
+section.introduction h2.introductionheader {
+  font-family: 'Russo One', sans-serif;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+section.introduction p {
+  margin-bottom: 16px;
+}
+
+/* ===== SERVICES ===== */
+section.services-section {
+  padding: 60px 80px;
+  color: #ede8e0;
+  font-size: 18px;
+  background-color: #1e1e1e;
+}
+
+section.services-section h2.servicesheader {
+  text-align: right;
+  font-family: 'Russo One', sans-serif;
+  font-size: 45px;
+  color: #ede8e0;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+
+.cta-block {
+  font-family: 'Russo One', sans-serif;
+  font-size: 45px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  background-color: #1e1e1e;
+}
+
+/* ===== CTA HYPERLINKS ===== */
+.cta-block a {
+  color: white;
+  text-decoration: none;
+}
+
+.gradient-divider {
+  width: 60%;
+  height: 30px;
+  background: linear-gradient(to right, #e4b047, #cb7a3b, #b84c38);
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service-cell {
+  border: 4px solid #333;
+  padding: 40px 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  color: black;
+  background-color: #ede8e0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.service-cell i {
+  font-size: 22px;
+  color: #321a0b;
+  flex-shrink: 0;
+}
+
+.service-cell a {
+  color: #D4A017;
+  text-decoration: none;
+}
+
+.service-cell a:hover {
+  text-decoration: underline;
+}
+
+/* ===== AREAS WE SERVICE ===== */
+section.areas-served {
+  background-color: #b8763a;
+  font-size: 26px;
+  padding: 60px 80px;
+  color: black;
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px;
+}
+
+.area-cell {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.area-cell a {
+  color: white;
+  text-decoration: none;
+}
+
+.areasheader {
+  font-family: 'Russo One', sans-serif;
+  font-size: 45px;
+}
+
+/* ===== ABOUT US ===== */
+section.whoweare {
+  background: #ede8e0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  line-height: 1.7;
+  padding: 60px 80px;
+}
+
+section.whoweare h2.whoweareheader {
+  text-align: right;
+  font-family: 'Russo One', sans-serif;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+section.whoweare p {
+  margin-bottom: 16px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.footer img {
+  width: 150px;
+  height: auto;
+}
+
+.footer-hours {
+  flex: 1;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* ===== SUB-PAGE CONTENT (services, cities, contact, etc) ===== */
+.page-content {
+  font-family: 'Montserrat', sans-serif;
+  padding: 60px 80px;
+  background: #ede8e0;
+  color: #111;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.page-content h2 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #321a0b;
+}
+
+.page-content h3 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 26px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  color: #b84c38;
+}
+
+.page-content p {
+  margin-bottom: 16px;
+}
+
+.page-content ul {
+  margin: 16px 0 24px 24px;
+}
+
+.page-content ul li {
+  margin-bottom: 8px;
+}
+
+.page-content a {
+  color: #b84c38;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.contact-info p {
+  margin-bottom: 14px;
+  font-size: 22px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  border: 2px solid #321a0b;
+  border-radius: 6px;
+  background: white;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background: linear-gradient(to right, #e4b047, #cb7a3b, #b84c38);
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  font-size: 22px;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  opacity: 0.92;
+}
+
+.callnow-block {
+  text-align: center;
+  padding: 60px 30px;
+  background: #1e1e1e;
+  color: white;
+}
+
+.callnow-block h2 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 42px;
+  color: #D4A017;
+  margin-bottom: 20px;
+}
+
+.callnow-block .big-phone {
+  font-family: 'Russo One', sans-serif;
+  font-size: 64px;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.callnow-block .big-phone a {
+  text-decoration: none;
+  background-image: linear-gradient(to right, #e4b047, #cb7a3b, #b84c38);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.callnow-block p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  max-width: 700px;
+  margin: 16px auto;
+  line-height: 1.6;
+  color: white;
+}
+
+/* ===========================================
+   RESPONSIVE BREAKPOINTS
+   =========================================== */
+
+/* ===== LARGE DESKTOP (1440px+) ===== */
+@media (min-width: 1440px) {
+  section.introduction,
+  section.services-section,
+  section.whoweare {
+    padding: 80px 120px;
+  }
+
+  .swiper,
+  .swiper-slide img {
+    height: 900px;
+  }
+}
+
+/* ===== SHORT-VIEWPORT LAPTOPS — keep hero from eating screen ===== */
+@media (max-height: 800px) {
+  .swiper,
+  .swiper-slide img {
+    height: 620px;
+  }
+}
+
+/* ===== LAPTOP / SMALL DESKTOP (≤1279px) ===== */
+@media (max-width: 1279px) {
+  .nav ul {
+    gap: 30px;
+    font-size: 18px;
+  }
+
+  .nav a,
+  .dropdown>span {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .service-cell {
+    font-size: 24px;
+    padding: 30px 35px;
+  }
+
+  .ticker-content span {
+    font-size: 26px;
+  }
+}
+
+/* ===== TABLET LANDSCAPE / SMALL LAPTOP (≤1024px) ===== */
+@media (max-width: 1024px) {
+  /* Hide nav links, show hamburger */
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%;
+    background: #2a2a2a;
+    padding: 10px 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    border-top: 2px solid #D4A017;
+  }
+
+  .nav ul.open {
+    display: flex;
+  }
+
+  .nav ul li {
+    width: 100%;
+    padding: 12px 20px;
+    border-bottom: 1px solid #444;
+  }
+
+  .nav a,
+  .dropdown>span {
+    font-size: 16px;
+  }
+
+  /* Mobile dropdowns: show inline, not absolutely positioned.
+     Hover doesn't work on touch and absolute positioning pushes
+     items off-screen inside the open mobile menu. */
+  .dropdown {
+    width: 100%;
+  }
+
+  .drop-downcontent {
+    display: block;
+    position: static;
+    background: transparent;
+    border: none;
+    margin-top: 8px;
+    padding-left: 16px;
+  }
+
+  .drop-downcontent a {
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide sign in icon on tablet/mobile to save space */
+  #signIn {
+    display: none;
+  }
+
+  h1 {
+    font-size: 32px;
+    padding: 15px;
+    border: 8px solid black;
+  }
+
+  .swiper,
+  .swiper-slide img {
+    height: 560px;
+  }
+
+  section.introduction,
+  section.services-section,
+  section.whoweare {
+    padding: 50px 40px;
+    font-size: 20px;
+  }
+
+  section.introduction h2.introductionheader,
+  section.services-section h2.servicesheader,
+  section.whoweare h2.whoweareheader {
+    font-size: 36px;
+  }
+
+  .service-cell {
+    padding: 22px 26px;
+    font-size: 18px;
+  }
+
+  /* Areas grid: 3 → 2 cols */
+  .areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section.areas-served {
+    padding: 50px 40px;
+    font-size: 20px;
+  }
+
+  .areasheader {
+    font-size: 36px;
+  }
+
+  .ticker-content span {
+    font-size: 22px;
+  }
+
+  .ticker-content {
+    gap: 40px;
+  }
+
+  /* CTA block scales down */
+  .cta-block {
+    font-size: 30px;
+  }
+
+  /* Sub-page content */
+  .page-content {
+    padding: 50px 40px;
+    font-size: 18px;
+  }
+
+  .page-content h2 {
+    font-size: 32px;
+  }
+
+  .page-content h3 {
+    font-size: 22px;
+  }
+
+  .callnow-block .big-phone {
+    font-size: 52px;
+  }
+}
+
+/* ===== TABLET PORTRAIT (≤768px) ===== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+    padding: 12px;
+    border: 6px solid black;
+  }
+
+  .swiper,
+  .swiper-slide img {
+    height: 440px;
+  }
+
+  /* Services: 3 → 2 cols */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section.introduction,
+  section.services-section,
+  section.whoweare {
+    padding: 40px 24px;
+    font-size: 17px;
+  }
+
+  section.introduction h2.introductionheader,
+  section.services-section h2.servicesheader,
+  section.whoweare h2.whoweareheader {
+    font-size: 30px;
+  }
+
+  section.areas-served {
+    padding: 40px 24px;
+    font-size: 17px;
+  }
+
+  .areasheader {
+    font-size: 30px;
+  }
+
+  .ticker-content span {
+    font-size: 18px;
+  }
+
+  .ticker-content {
+    gap: 30px;
+  }
+
+  .ticker-wrapper {
+    padding: 18px 0;
+  }
+
+  .cta-block {
+    font-size: 24px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .gradient-divider {
+    width: 80%;
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Footer stacks vertically on mobile */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding: 24px 16px;
+  }
+
+  .footer img {
+    width: 110px;
+  }
+
+  .footer-hours {
+    font-size: 18px;
+  }
+
+  /* Sub-page content */
+  .page-content {
+    padding: 40px 24px;
+    font-size: 16px;
+  }
+
+  .page-content h2 {
+    font-size: 26px;
+  }
+
+  .page-content h3 {
+    font-size: 20px;
+  }
+
+  /* Contact: 2 cols → 1 col */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .contact-info p {
+    font-size: 18px;
+  }
+
+  .callnow-block {
+    padding: 40px 20px;
+  }
+
+  .callnow-block h2 {
+    font-size: 30px;
+  }
+
+  .callnow-block .big-phone {
+    font-size: 38px;
+  }
+
+  .callnow-block p {
+    font-size: 16px;
+  }
+}
+
+/* ===== MOBILE (≤480px) ===== */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+    padding: 10px;
+    border: 4px solid black;
+  }
+
+  .nav {
+    padding: 10px 14px;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+
+  .swiper,
+  .swiper-slide img {
+    height: 280px;
+  }
+
+  /* Services: 2 → 1 col */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-cell {
+    padding: 18px 20px;
+    font-size: 16px;
+  }
+
+  /* Areas grid: 2 → 1 col */
+  .areas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .area-cell {
+    padding: 12px;
+  }
+
+  section.introduction,
+  section.services-section,
+  section.whoweare {
+    padding: 30px 18px;
+    font-size: 15px;
+  }
+
+  section.introduction h2.introductionheader,
+  section.services-section h2.servicesheader,
+  section.whoweare h2.whoweareheader {
+    font-size: 24px;
+  }
+
+  section.areas-served {
+    padding: 30px 18px;
+    font-size: 15px;
+  }
+
+  .areasheader {
+    font-size: 24px;
+  }
+
+  .ticker-content span {
+    font-size: 15px;
+  }
+
+  .ticker-content {
+    gap: 24px;
+  }
+
+  .cta-block {
+    font-size: 20px;
+  }
+
+  .cta-block p {
+    word-break: break-word;
+  }
+
+  /* Sub-page content */
+  .page-content {
+    padding: 30px 18px;
+    font-size: 15px;
+  }
+
+  .page-content h2 {
+    font-size: 22px;
+  }
+
+  .page-content h3 {
+    font-size: 18px;
+  }
+
+  .contact-info p {
+    font-size: 16px;
+  }
+
+  .callnow-block h2 {
+    font-size: 24px;
+  }
+
+  .callnow-block .big-phone {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB Electrical</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="topbar">
+        <h1>Professional Electrical Services in West Los Angeles</h1>
+        <nav class="nav">
+            <div id="logo" class="logo">
+                <img src="../images/logo.png">
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <span class="services">Services</span>
+                    <div class="drop-downcontent">
+                        <a href="../services/residential_electrical.html">Residential Electrical</a>
+                        <a href="../services/commercial_electrical.html">Commercial Electrical</a>
+                        <a href="../services/panel_upgrades.html">Panel Upgrades</a>
+                        <a href="../services/evcharging_electrical.html">EV Charging Installation</a>
+                        <a href="../services/lighting_installations.html">Lighting Installation</a>
+                        <a href="../services/electrical_troubleshooting.html">Electrical Troubleshooting</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <span class="serviced-cities">Cities Serviced</span>
+                    <div class="drop-downcontent">
+                        <a href="../servicing-areas/west_los_angeles.html">West Los Angeles</a>
+                        <a href="../servicing-areas/santamonica.html">Santa Monica</a>
+                        <a href="../servicing-areas/venice_beach.html">Venice Beach</a>
+                        <a href="../servicing-areas/malibu.html">Malibu</a>
+                        <a href="../servicing-areas/westwood.html">Westwood</a>
+                    </div>
+                </li>
+                <li><a href="../aboutus.html">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../callnow.html">Call Now</a></li>
+            </ul>
+            <div id="signIn" class="SignIn">
+                <button type="button" onclick="signIn()" class="icon-btn">
+                    <i class="fa-solid fa-circle-user"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="page-content">
+            <h2>EV Charger Installation</h2>
+            <p>Got a new electric vehicle? AB Electrical installs Level 2 home chargers so you can charge faster and more reliably than a standard outlet allows. The biggest cost in any EV charger install is the new 220V circuit from your panel — and we publish flat rates for that work below.</p>
+
+            <h3>The 220V Circuit (the main cost)</h3>
+            <p>Most Level 2 EV chargers run on either a 30A or 50A 220V circuit. Our flat-rate circuit pricing covers the run from your panel up to 15 feet, one receptacle, and a standard Siemens or Murray circuit breaker.</p>
+            <ul>
+                <li><strong>220V 30A New Circuit</strong> — $450</li>
+                <li><strong>220V 50A New Circuit</strong> — $550</li>
+            </ul>
+
+            <h3>Site Visit Required for Full Quote</h3>
+            <p>EV charger installs vary too much for a single flat rate — every house is different. The total cost depends on:</p>
+            <ul>
+                <li>Distance from your panel to where the charger will mount</li>
+                <li>Whether your panel has spare capacity (or needs a sub-panel added)</li>
+                <li>Conduit routing — through walls, attics, garage, or underground</li>
+                <li>Charger model and mounting requirements</li>
+                <li>Permit and inspection requirements for your city</li>
+            </ul>
+            <p>Most home installs can be completed in a single day once permits are in hand. Call <a href="tel:6263948797">(626) 394-8797</a> for a free site visit and a written quote — no surprises and no high-pressure tactics.</p>
+
+            <h3>Why Choose AB Electrical</h3>
+            <p>Licensed (#1094589) and bonded (#G7395408). We handle the permitting paperwork, pull permits where required, and warranty our work. Your circuit will be sized correctly the first time, and the install will be code-compliant and inspector-ready.</p>
+            <p><em>All prices listed are starting prices for the service described and reflect labor for a standard install. Actual cost may vary based on existing wiring conditions, accessibility, additional materials, and home-run distance. We always provide a clear quote before starting work.</em></p>
+        </section>
+        <div class="cta-block">
+            <div class="gradient-divider"></div>
+            <h3 class="ctaheader" style="color: white;">Need Service? Get a Free Estimate Today!</h3>
+            <p><a href="tel:6263948797">📞 (626)-394-8797</a></p>
+            <p><a href="mailto:abelectricco22@gmail.com">✉️ abelectricco22@gmail.com</a></p>
+            <div class="gradient-divider"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="../images/logo.png">
+        </div>
+        <div class="footer-hours">
+            <p>Hours of Operation:</p>
+            <p>Monday - Friday: 8am - 6pm</p>
+            <p>Saturday: 9am - 4pm</p>
+            <p>Sunday: Closed</p>
+        </div>
+    </footer>
+    <!-- LOG IN MODAL -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <form action="#">
+                <label for="email">Please enter your email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Sign In">
+                <span onclick="closeModal()" class="close">&times;</span>
+            </form>
+        </div>
+    </div>
+    <script src="../customersignin.js"></script>
+</body>
+</html>
