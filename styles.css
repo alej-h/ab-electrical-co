@@ -830,6 +830,15 @@ section.whoweare p {
     border: 4px solid black;
   }
 
+  @media (max-width: 768px) {
+    .cta-block_homepage a,
+    .cta-block_homepage p,
+    .cta-block_homepage h3 {
+      font-size: 1.5rem;
+      word-break: break-word;
+    }
+  }
+
   .nav {
     padding: 10px 14px;
   }
