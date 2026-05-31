@@ -278,6 +278,7 @@ section.services-section h2.servicesheader {
   border: 6px solid #333;
   border-radius: 15px;
   padding: 30px;
+  margin-bottom: 65px;
 }
 
 .cta-block_contactinfo {
@@ -298,17 +299,21 @@ section.services-section h2.servicesheader {
   border: 4px;
   border-radius: 15px;
   background: #b8763a;
+  color: white;
   padding: 5px;
   width: 10em;
   text-align: center;
+  text-decoration: none;
 }
 .cta-block_contactinfobuttons a.emailcontact {
   border: 4px;
   border-radius: 15px;
   background: #1e1e1e;
+  color: white;
   padding: 5px;
   width: 10em;
   text-align: center;
+  text-decoration: none;
 }
 
 .services-grid {
@@ -874,6 +879,7 @@ section.whoweare p {
 
     .cta-blockflexbox {
       width: 90%;
+      flex-direction: column;
     }
   }
 
