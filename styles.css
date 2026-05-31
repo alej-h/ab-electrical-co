@@ -280,6 +280,15 @@ section.services-section h2.servicesheader {
   padding: 30px;
   margin-bottom: 65px;
 }
+.cta-block_subpages {
+  font-family: 'Russo One', sans-serif;
+  font-size: 30px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  background-color: #ede8e0;
+}
 
 .cta-block_contactinfo {
   color: white;
