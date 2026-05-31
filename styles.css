@@ -254,7 +254,7 @@ section.services-section h2.servicesheader {
 
 .cta-block_homepage {
   font-family: 'Russo One', sans-serif;
-  font-size: 45px;
+  font-size: 25px;
   margin-bottom: 0px;
   text-align: center;
   padding-bottom: 15px;
@@ -268,13 +268,47 @@ section.services-section h2.servicesheader {
   text-decoration: none;
 }
 
-.gradient-divider {
-  width: 60%;
-  height: 30px;
-  background: linear-gradient(to right, #e4b047, #cb7a3b, #b84c38);
+.cta-blockflexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60em;
   margin: 0 auto;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  background-color: rgb(14, 6, 6);
+  border: 6px solid #333;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.cta-block_contactinfo {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-left: 6px solid #e8890a; /*=== CREATES LEFT BORDER LINE NEXT TO CONTACTINFO TEXT ===*/
+  padding-left: 10px; /* === PUSHES TEXT AWAY FROM BORDER ===*/
+}
+
+.cta-block_contactinfobuttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-block_contactinfobuttons a.phonenumber {
+  border: 4px;
+  border-radius: 15px;
+  background: #b8763a;
+  padding: 5px;
+  width: 10em;
+  text-align: center;
+}
+.cta-block_contactinfobuttons a.emailcontact {
+  border: 4px;
+  border-radius: 15px;
+  background: #1e1e1e;
+  padding: 5px;
+  width: 10em;
+  text-align: center;
 }
 
 .services-grid {
@@ -852,7 +886,7 @@ section.whoweare p {
     height: 280px;
   }
 
-  /* Services: 2 → 1 col */
+  /* Services: 2 → 1 col creates the flexbox */
   .services-grid {
     grid-template-columns: 1fr;
   }
