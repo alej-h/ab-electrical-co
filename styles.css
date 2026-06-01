@@ -882,13 +882,23 @@ section.whoweare p {
     .cta-block_homepage a,
     .cta-block_homepage p,
     .cta-block_homepage h3 {
-      font-size: 1.5rem;
+      font-size: 1.1rem;
       word-break: break-word;
     }
 
     .cta-blockflexbox {
       width: 90%;
       flex-direction: column;
+    }
+
+    .cta-block_contactinfobuttons {
+      align-items: center;
+      margin-top: 10px;
+    }
+      
+    .cta-block_subpages {
+      align-items: center;
+      font-size: 1.1rem;
     }
   }
 
