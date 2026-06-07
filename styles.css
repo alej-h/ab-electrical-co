@@ -12,19 +12,76 @@ body {
 }
 
 /* ===== HEADER BANNER ===== */
+.hero h1 {
+  text-align: left;
+  font-family: 'Russo One', sans-serif;
+  font-size: 50px;
+  padding: 20px;
+  background-image: none;
+}
+
 h1 {
   text-align: center;
   background-image: linear-gradient(to right, #e4b047, #cb7a3b, #b84c38);
   font-family: 'Russo One', sans-serif;
   font-size: 50px;
   padding: 20px;
-  border: 15px solid black;
+}
+
+.hero-content {
+  position: absolute;
+  z-index: 2;
+  top: 43%;
+  left: 5%;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-ctas {}
+
+.btn {
+  padding: 12px 24px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background: #D4A017;
+  color: #1a1107;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 /* ===== TOPBAR ===== */
+
 .topbar {
   background: #2a2a2a;
   border-bottom: 4px solid #D4A017;
+}
+
+
+.topbar.hero {
+  background: #2a2a2a;
+  border-bottom: 4px solid #D4A017;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
 }
 
 /* ===== NAV ===== */
@@ -33,6 +90,13 @@ h1 {
   padding: 14px 18px;
   align-items: center;
   position: relative;
+}
+
+.hero .nav {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
 }
 
 .nav ul {
@@ -47,7 +111,7 @@ h1 {
 
 .nav a,
 .dropdown>span {
-  color: #D4A017;
+  color: white;
   font-size: 22px;
   text-decoration: none;
 }
@@ -77,7 +141,7 @@ h1 {
   display: block;
   padding: 10px 12px;
   font-size: 13px;
-  color: #D4A017;
+  color: white;
 }
 
 .dropdown:hover .drop-downcontent {
@@ -86,8 +150,7 @@ h1 {
 
 .dropdown>span {
   font-family: 'Russo One', sans-serif;
-  background: #2a2a2a;
-  color: #D4A017;
+  color: white;
   cursor: default;
 }
 
@@ -95,6 +158,7 @@ h1 {
 .logo {
   display: flex;
   align-items: center;
+  padding: 20px;
 }
 
 .logo img {
@@ -201,8 +265,13 @@ h1 {
 }
 
 @keyframes ticker {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* ===== WHY US ===== */
@@ -280,6 +349,7 @@ section.services-section h2.servicesheader {
   padding: 30px;
   margin-bottom: 65px;
 }
+
 .cta-block_subpages {
   font-family: 'Russo One', sans-serif;
   font-size: 30px;
@@ -295,8 +365,10 @@ section.services-section h2.servicesheader {
   display: flex;
   flex-direction: column;
   text-align: left;
-  border-left: 6px solid #e8890a; /*=== CREATES LEFT BORDER LINE NEXT TO CONTACTINFO TEXT ===*/
-  padding-left: 10px; /* === PUSHES TEXT AWAY FROM BORDER ===*/
+  border-left: 6px solid #e8890a;
+  /*=== CREATES LEFT BORDER LINE NEXT TO CONTACTINFO TEXT ===*/
+  padding-left: 10px;
+  /* === PUSHES TEXT AWAY FROM BORDER ===*/
 }
 
 .cta-block_contactinfobuttons {
@@ -314,6 +386,7 @@ section.services-section h2.servicesheader {
   text-align: center;
   text-decoration: none;
 }
+
 .cta-block_contactinfobuttons a.emailcontact {
   border: 4px;
   border-radius: 15px;
@@ -564,6 +637,7 @@ section.whoweare p {
 
 /* ===== LARGE DESKTOP (1440px+) ===== */
 @media (min-width: 1440px) {
+
   section.introduction,
   section.services-section,
   section.whoweare {
@@ -578,6 +652,7 @@ section.whoweare p {
 
 /* ===== SHORT-VIEWPORT LAPTOPS — keep hero from eating screen ===== */
 @media (max-height: 800px) {
+
   .swiper,
   .swiper-slide img {
     height: 620px;
@@ -612,6 +687,7 @@ section.whoweare p {
 
 /* ===== TABLET LANDSCAPE / SMALL LAPTOP (≤1024px) ===== */
 @media (max-width: 1024px) {
+
   /* Hide nav links, show hamburger */
   .nav ul {
     display: none;
@@ -676,7 +752,6 @@ section.whoweare p {
   h1 {
     font-size: 32px;
     padding: 15px;
-    border: 8px solid black;
   }
 
   .swiper,
@@ -879,6 +954,7 @@ section.whoweare p {
   }
 
   @media (max-width: 768px) {
+
     .cta-block_homepage a,
     .cta-block_homepage p,
     .cta-block_homepage h3 {
@@ -893,9 +969,9 @@ section.whoweare p {
 
     .cta-block_contactinfobuttons {
       align-items: center;
-      
+
     }
-      
+
     .cta-block_subpages {
       align-items: center;
       font-size: 1.1rem;
