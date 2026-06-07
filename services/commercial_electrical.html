@@ -4,65 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AB Electrical</title>
+    <title>Commercial Electrical Services — AB Electric Co. | West Los Angeles</title>
+    <meta name="description" content="Commercial electrical work, vacancy turnovers, and bulk service rates for property managers and small business owners in West Los Angeles.">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Russo+One&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@400;600;700&display=swap">
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header class="topbar">
-        <h1>Professional Electrical Services in West Los Angeles</h1>
-        <nav class="nav">
+        <nav class="nav" aria-label="Main navigation">
             <div id="logo" class="logo">
-                <img src="../images/logo.png">
+                <a href="../index.html" aria-label="AB Electric Co. — home">
+                    <img src="../images/logo.png" alt="AB Electric Co.">
+                </a>
             </div>
-            <button class="hamburger" onclick="toggleMenu()">☰</button>
-            <ul>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-menu">☰</button>
+            <ul id="primary-menu">
                 <li><a href="../index.html">Home</a></li>
                 <li class="dropdown">
-                    <span class="services">Services</span>
-                    <div class="drop-downcontent">
-                        <a href="../services/residential_electrical.html">Residential Electrical</a>
-                        <a href="../services/commercial_electrical.html">Commercial Electrical</a>
-                        <a href="../services/panel_upgrades.html">Panel Upgrades</a>
-                        <a href="../services/evcharging_electrical.html">EV Charging Installation</a>
-                        <a href="../services/lighting_installations.html">Lighting Installation</a>
-                        <a href="../services/electrical_troubleshooting.html">Electrical Troubleshooting</a>
+                    <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Services</button>
+                    <div class="drop-downcontent" role="menu">
+                        <a href="../services/residential_electrical.html" role="menuitem">Residential Electrical</a>
+                        <a href="../services/commercial_electrical.html" role="menuitem">Commercial Electrical</a>
+                        <a href="../services/panel_upgrades.html" role="menuitem">Panel Upgrades</a>
+                        <a href="../services/evcharging_electrical.html" role="menuitem">EV Charging Installation</a>
+                        <a href="../services/lighting_installations.html" role="menuitem">Lighting Installation</a>
+                        <a href="../services/electrical_troubleshooting.html" role="menuitem">Electrical Troubleshooting</a>
                     </div>
                 </li>
                 <li class="dropdown">
-                    <span class="serviced-cities">Cities Serviced</span>
-                    <div class="drop-downcontent">
-                        <a href="../servicing-areas/west_los_angeles.html">West Los Angeles</a>
-                        <a href="../servicing-areas/santamonica.html">Santa Monica</a>
-                        <a href="../servicing-areas/venice_beach.html">Venice Beach</a>
-                        <a href="../servicing-areas/malibu.html">Malibu</a>
-                        <a href="../servicing-areas/westwood.html">Westwood</a>
+                    <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Cities Serviced</button>
+                    <div class="drop-downcontent" role="menu">
+                        <a href="../servicing-areas/west_los_angeles.html" role="menuitem">West Los Angeles</a>
+                        <a href="../servicing-areas/santamonica.html" role="menuitem">Santa Monica</a>
+                        <a href="../servicing-areas/venice_beach.html" role="menuitem">Venice Beach</a>
+                        <a href="../servicing-areas/malibu.html" role="menuitem">Malibu</a>
+                        <a href="../servicing-areas/westwood.html" role="menuitem">Westwood</a>
                     </div>
                 </li>
                 <li><a href="../aboutus.html">About Us</a></li>
                 <li><a href="../contact.html">Contact</a></li>
-                <li><a href="../callnow.html">Call Now</a></li>
+                <li><a href="tel:6263948797" class="nav-call">Call Now</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+
+    <main id="main-content">
         <section class="page-content">
-            <h2>Commercial Electrical Services</h2>
+            <h1>Commercial Electrical Services</h1>
             <p>Downtime costs your business money. AB Electrical works with property managers, landlords, and small
                 business owners across West Los Angeles to keep commercial spaces lit, powered, and code-compliant. We
                 schedule around your operating hours and communicate every step of the way.</p>
 
-            <h3>Vacancy &amp; Turnover Bulk Service</h3>
+            <h2>Vacancy &amp; Turnover Bulk Service</h2>
             <p>Turning a unit between tenants? Our bulk turnover rates are designed for property managers and landlords
                 who need fast, reliable resets on receptacles, switches, fixtures, and safety devices. Call us for a
                 walk-through and a custom quote.</p>
 
-            <h3>Receptacles &amp; Cover Plates (Bulk)</h3>
+            <h2>Receptacles &amp; Cover Plates (Bulk)</h2>
             <ul>
                 <li><strong>Decora Duplex 15A</strong></li>
                 <li><strong>GFCI Duplex 20A</strong></li>
@@ -73,7 +77,7 @@
                 <li><strong>Decora 3-Gang Cover Plate</strong></li>
             </ul>
 
-            <h3>Switches &amp; Cover Plates (Bulk)</h3>
+            <h2>Switches &amp; Cover Plates (Bulk)</h2>
             <ul>
                 <li><strong>Decora Single-Pole 15A</strong></li>
                 <li><strong>Decora 3-Way 15A</strong></li>
@@ -82,7 +86,7 @@
                 <li><strong>Smart Dimmer</strong></li>
             </ul>
 
-            <h3>Light Fixtures (Bulk)</h3>
+            <h2>Light Fixtures (Bulk)</h2>
             <ul>
                 <li><strong>12" Surface-Mounted LED</strong></li>
                 <li><strong>14" Surface-Mounted LED</strong></li>
@@ -95,7 +99,7 @@
                 <li><strong>24" Modern Chandelier</strong></li>
             </ul>
 
-            <h3>Devices &amp; Safety (Bulk)</h3>
+            <h2>Devices &amp; Safety (Bulk)</h2>
             <ul>
                 <li><strong>Surface-Mounted Heater</strong></li>
                 <li><strong>120V Smoke Detector</strong></li>
@@ -103,7 +107,7 @@
                 <li><strong>Battery CO Detector</strong></li>
             </ul>
 
-            <h3>Bath &amp; Kitchen Exhaust (Bulk)</h3>
+            <h2>Bath &amp; Kitchen Exhaust (Bulk)</h2>
             <ul>
                 <li><strong>Junction Box &amp; Outlet for Range Exhaust</strong></li>
                 <li><strong>Service Bathroom Exhaust Fan</strong></li>
@@ -111,59 +115,54 @@
                 <li><strong>Replace Fan Cover</strong></li>
             </ul>
 
-            <h3>Parking Lot &amp; Exterior</h3>
+            <h2>Parking Lot &amp; Exterior</h2>
             <p>Commercial exterior lighting and parking lot LED conversions are handled out of our standard exterior
                 electrical services — see our <a href="lighting_installations.html">Lighting Installation</a> page for
                 parking fixtures, exterior LED, security flood lights, and bell box work.</p>
 
-            <h3>Why Choose AB Electrical</h3>
+            <h2>Why Choose AB Electrical</h2>
             <p>Licensed (#1094589) and bonded (#G7395408), with 20+ years of experience and a published rate sheet so
                 you know what each unit will cost. We pull permits where required, schedule around tenant moves, and
                 keep job sites clean.</p>
         </section>
+
         <div class="cta-block_subpages">
             <div class="cta-blockflexbox">
                 <div class="cta-block_contactinfo">
-                    <h3 class="ctaheader" style="color: grey;">Contact us and get a quote!</h3>
-                    <p>(626)-394-8797</p>
-                    <p>Mon-Fri 8am-6pm · Sat 9am-4pm</p>
+                    <h3 class="ctaheader">Contact us and get a quote</h3>
+                    <p>(626) 394-8797</p>
+                    <p>Mon–Fri 8am–6pm · Sat 9am–4pm</p>
                 </div>
                 <div class="cta-block_contactinfobuttons">
                     <a href="tel:6263948797" class="phonenumber">
-                        <i class="fa fa-phone" style="margin-right: 6px;"></i>Call Now
+                        <i class="fa fa-phone" aria-hidden="true"></i> Call Now
                     </a>
                     <a href="mailto:abelectricco22@gmail.com" class="emailcontact">
-                        <i class="fa fa-envelope" style="margin-right: 6px;"></i>Email Us
+                        <i class="fa fa-envelope" aria-hidden="true"></i> Email Us
                     </a>
                 </div>
             </div>
         </div>
     </main>
+
     <footer class="footer">
         <div class="footer-logo">
-            <img src="../images/logo.png">
+            <img src="../images/logo.png" alt="AB Electric Co.">
         </div>
         <div class="footer-hours">
-            <p>Hours of Operation:</p>
-            <p>Monday - Friday: 8am - 6pm</p>
-            <p>Saturday: 9am - 4pm</p>
+            <p><strong>Hours of Operation</strong></p>
+            <p>Monday – Friday: 8am – 6pm</p>
+            <p>Saturday: 9am – 4pm</p>
             <p>Sunday: Closed</p>
         </div>
-    </footer>
-    <!-- LOG IN MODAL -->
-    <div id="signInModal" class="modal">
-        <div class="modal-content">
-            <form action="#">
-                <label for="email">Please enter your email:</label>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password"><br><br>
-                <input type="submit" value="Sign In">
-                <span onclick="closeModal()" class="close">&times;</span>
-            </form>
+        <div class="footer-contact">
+            <p><a href="tel:6263948797">(626) 394-8797</a></p>
+            <p><a href="mailto:abelectricco22@gmail.com">abelectricco22@gmail.com</a></p>
+            <p>License #1094589 · Bond #G7395408</p>
         </div>
-    </div>
-    <script src="../customersignin.js"></script>
+    </footer>
+
+    <script src="../site.js"></script>
 </body>
 
 </html>

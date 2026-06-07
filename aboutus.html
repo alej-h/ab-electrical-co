@@ -4,118 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AB Electrical</title>
+    <title>About AB Electric Co. — Licensed Electrician in West Los Angeles</title>
+    <meta name="description" content="Learn about AB Electric Co. — a licensed, bonded, family-operated electrical contractor serving West Los Angeles for over 20 years. CSLB #1094589.">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Russo+One&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@400;600;700&display=swap">
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header class="topbar">
-        <h1>Professional Electrical Services in West Los Angeles</h1>
-        <nav class="nav">
+        <nav class="nav" aria-label="Main navigation">
             <div id="logo" class="logo">
-                <img src="images/logo.png">
+                <a href="index.html" aria-label="AB Electric Co. — home">
+                    <img src="images/logo.png" alt="AB Electric Co.">
+                </a>
             </div>
-            <button class="hamburger" onclick="toggleMenu()">☰</button>
-            <ul>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-menu">☰</button>
+            <ul id="primary-menu">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                    <span class="services">Services</span>
-                    <div class="drop-downcontent">
-                        <a href="services/residential_electrical.html">Residential Electrical</a>
-                        <a href="services/commercial_electrical.html">Commercial Electrical</a>
-                        <a href="services/panel_upgrades.html">Panel Upgrades</a>
-                        <a href="services/evcharging_electrical.html">EV Charging Installation</a>
-                        <a href="services/lighting_installations.html">Lighting Installation</a>
-                        <a href="services/electrical_troubleshooting.html">Electrical Troubleshooting</a>
+                    <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Services</button>
+                    <div class="drop-downcontent" role="menu">
+                        <a href="services/residential_electrical.html" role="menuitem">Residential Electrical</a>
+                        <a href="services/commercial_electrical.html" role="menuitem">Commercial Electrical</a>
+                        <a href="services/panel_upgrades.html" role="menuitem">Panel Upgrades</a>
+                        <a href="services/evcharging_electrical.html" role="menuitem">EV Charging Installation</a>
+                        <a href="services/lighting_installations.html" role="menuitem">Lighting Installation</a>
+                        <a href="services/electrical_troubleshooting.html" role="menuitem">Electrical Troubleshooting</a>
                     </div>
                 </li>
                 <li class="dropdown">
-                    <span class="serviced-cities">Cities Serviced</span>
-                    <div class="drop-downcontent">
-                        <a href="servicing-areas/west_los_angeles.html">West Los Angeles</a>
-                        <a href="servicing-areas/santamonica.html">Santa Monica</a>
-                        <a href="servicing-areas/venice_beach.html">Venice Beach</a>
-                        <a href="servicing-areas/malibu.html">Malibu</a>
-                        <a href="servicing-areas/westwood.html">Westwood</a>
+                    <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Cities Serviced</button>
+                    <div class="drop-downcontent" role="menu">
+                        <a href="servicing-areas/west_los_angeles.html" role="menuitem">West Los Angeles</a>
+                        <a href="servicing-areas/santamonica.html" role="menuitem">Santa Monica</a>
+                        <a href="servicing-areas/venice_beach.html" role="menuitem">Venice Beach</a>
+                        <a href="servicing-areas/malibu.html" role="menuitem">Malibu</a>
+                        <a href="servicing-areas/westwood.html" role="menuitem">Westwood</a>
                     </div>
                 </li>
-                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="aboutus.html" aria-current="page">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="callnow.html">Call Now</a></li>
+                <li><a href="tel:6263948797" class="nav-call">Call Now</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+
+    <main id="main-content">
         <section class="page-content">
-            <h2>Who We Are</h2>
-            <p>AB Electrical brings over 20 years of hands-on electrical experience serving residential and commercial
-                clients. Our work is built on a foundation of safety, reliability, and precision. From troubleshooting
-                complex electrical issues to installing new panels, lighting systems, circuits, and full electrical
-                upgrades, we approach every job with the same commitment to quality workmanship and customer
-                satisfaction.</p>
-            <p>We specialize in electrical diagnostics, panel upgrades, breaker replacements, lighting installation,
-                outlet and switch repair, EV charger installation, and complete electrical system improvements. With
-                decades of experience in the field, we understand how to quickly identify problems and deliver
-                long-lasting solutions that meet modern electrical codes and safety standards.</p>
-            <p>At AB Electrical, clear communication and honest service come first. Every project begins with a thorough
-                evaluation and transparent explanation of the work needed so customers feel confident and informed.
-                Whether it's a small repair or a large installation, our goal is simple: provide dependable electrical
-                service you can trust.</p>
-            <h3>Licensed &amp; Bonded</h3>
-            <p>License # 1094589 &nbsp;|&nbsp; Bond # G7395408</p>
-            <h3>How We Work</h3>
-            <p>Every job starts with a free estimate. We'll come out, look at the work, and give you a clear, written
-                quote up front — no surprises and no high-pressure tactics. Once you approve, we schedule the work
-                around you, show up on time, and clean up after ourselves before we leave.</p>
+            <h1>About AB Electric Co.</h1>
+            <p>AB Electric brings over 20 years of hands-on electrical experience serving residential and commercial clients. Our work is built on a foundation of safety, reliability, and precision. From troubleshooting complex electrical issues to installing new panels, lighting systems, circuits, and full electrical upgrades, we approach every job with the same commitment to quality workmanship and customer satisfaction.</p>
+            <p>We specialize in electrical diagnostics, panel upgrades, breaker replacements, lighting installation, outlet and switch repair, EV charger installation, and complete electrical system improvements. With decades of experience in the field, we understand how to quickly identify problems and deliver long-lasting solutions that meet modern electrical codes and safety standards.</p>
+            <p>At AB Electric, clear communication and honest service come first. Every project begins with a thorough evaluation and transparent explanation of the work needed so customers feel confident and informed. Whether it's a small repair or a large installation, our goal is simple: provide dependable electrical service you can trust.</p>
+            <h2>Licensed &amp; Bonded</h2>
+            <p>License #1094589 &nbsp;|&nbsp; Bond #G7395408</p>
+            <h2>How We Work</h2>
+            <p>Every job starts with a free estimate. We'll come out, look at the work, and give you a clear, written quote up front — no surprises and no high-pressure tactics. Once you approve, we schedule the work around you, show up on time, and clean up after ourselves before we leave.</p>
         </section>
+
         <div class="cta-block_subpages">
             <div class="cta-blockflexbox">
                 <div class="cta-block_contactinfo">
-                    <h3 class="ctaheader" style="color: grey;">Contact us and get a quote!</h3>
-                    <p>(626)-394-8797</p>
-                    <p>Mon-Fri 8am-6pm · Sat 9am-4pm</p>
+                    <h3 class="ctaheader">Contact us and get a quote</h3>
+                    <p>(626) 394-8797</p>
+                    <p>Mon–Fri 8am–6pm · Sat 9am–4pm</p>
                 </div>
                 <div class="cta-block_contactinfobuttons">
                     <a href="tel:6263948797" class="phonenumber">
-                        <i class="fa fa-phone" style="margin-right: 6px;"></i>Call Now
+                        <i class="fa fa-phone" aria-hidden="true"></i> Call Now
                     </a>
                     <a href="mailto:abelectricco22@gmail.com" class="emailcontact">
-                        <i class="fa fa-envelope" style="margin-right: 6px;"></i>Email Us
+                        <i class="fa fa-envelope" aria-hidden="true"></i> Email Us
                     </a>
                 </div>
             </div>
         </div>
     </main>
+
     <footer class="footer">
         <div class="footer-logo">
-            <img src="images/logo.png">
+            <img src="images/logo.png" alt="AB Electric Co.">
         </div>
         <div class="footer-hours">
-            <p>Hours of Operation:</p>
-            <p>Monday - Friday: 8am - 6pm</p>
-            <p>Saturday: 9am - 4pm</p>
+            <p><strong>Hours of Operation</strong></p>
+            <p>Monday – Friday: 8am – 6pm</p>
+            <p>Saturday: 9am – 4pm</p>
             <p>Sunday: Closed</p>
         </div>
-    </footer>
-    <!-- LOG IN MODAL -->
-    <div id="signInModal" class="modal">
-        <div class="modal-content">
-            <form action="#">
-                <label for="email">Please enter your email:</label>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password"><br><br>
-                <input type="submit" value="Sign In">
-                <span onclick="closeModal()" class="close">&times;</span>
-            </form>
+        <div class="footer-contact">
+            <p><a href="tel:6263948797">(626) 394-8797</a></p>
+            <p><a href="mailto:abelectricco22@gmail.com">abelectricco22@gmail.com</a></p>
+            <p>License #1094589 · Bond #G7395408</p>
         </div>
-    </div>
-    <script src="customersignin.js"></script>
+    </footer>
+
+    <script src="site.js"></script>
 </body>
 
 </html>
