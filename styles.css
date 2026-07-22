@@ -461,17 +461,15 @@ section.services-section h2.servicesheader {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
 }
 
 .service-cell {
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 4px solid #333;
   padding: 36px 32px;
   font-family: 'Manrope', sans-serif;
   font-size: 20px;
   font-weight: 600;
   background-color: #ede8e0;
-  border-radius: 8px;
   display: flex;
   align-items: center;
   gap: 14px;
@@ -560,29 +558,21 @@ section.whoweare h2.whoweareheader {
 }
 
 .whoweare-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.whoweare-card {
-  background: #fff;
-  padding: 28px 24px;
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .whoweare-card h3 {
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 8px;
   color: #321a0b;
 }
 
 .whoweare-card p {
-  font-size: 15px;
-  color: #4a4a4a;
+  font-size: 17px;
   line-height: 1.6;
 }
 
