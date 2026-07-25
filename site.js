@@ -54,3 +54,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Gallery Click to Advance
+const viewer = document.querySelector('.viewer');
+const imgs = viewer.querySelectorAll('img');
+const dots = document.querySelectorAll('.dot');
+let current = 0;
+
+viewer.addEventListener('click', function() {
+  imgs[current].classList.remove('active');
+  dots[current].classList.remove('active');
+  current++;
+  if (current === imgs.length) {
+    current = 0;
+  }
+  imgs[current].classList.add('active');
+  dots[current].classList.add('active');
+});
