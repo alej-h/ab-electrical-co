@@ -57,7 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Gallery Click to Advance
 const allViewers = document.querySelectorAll('.viewer');
+/// Searches entire page for every element with class Viewer^^
 
+/// Starts a loop that runs the code inside {} once for each item in allViewers.
 allViewers.forEach(function(viewer) {
   const imgs = viewer.querySelectorAll('img');
   const dots = viewer.parentElement.querySelectorAll('.dot');

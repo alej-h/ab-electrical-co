@@ -791,13 +791,18 @@ section.whoweare h2.whoweareheader {
 .gallery-main{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
-  gap: 10px;
+  gap: 24px;
+  background: #ede8e0;
+  padding: 40px;
 }
 .viewer { 
   position: relative;
   aspect-ratio: 16/9;
   max-width: 1050px;
   margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .viewer img {
@@ -807,11 +812,27 @@ section.whoweare h2.whoweareheader {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.4s ease;
 }
 
 .viewer img.active {
   opacity: 1;
+}
+
+.viewer:hover img.active {
+  transform: scale(1.02);
+}
+
+.city {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease;
+}
+
+.city:hover {
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
 }
 
 .city h2 {
@@ -826,6 +847,21 @@ section.whoweare h2.whoweareheader {
   display: flex;
   gap: 14px;
   align-items: baseline;
+}
+
+.city-index {
+  color: #D4A017;
+  font-weight: 700;
+}
+
+.city-name {
+  font-weight: 700;
+  color: #1a1107;
+}
+
+.city-meta {
+  color: #6b5a48;
+  font-size: 20px;
 }
 
 .dot {
