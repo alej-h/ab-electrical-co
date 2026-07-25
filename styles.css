@@ -805,7 +805,7 @@ section.whoweare h2.whoweareheader {
 .gallery-header {
   max-width: 1050px;
   margin: 0 auto;
-  padding: 40px 24px 8px;
+  padding: 0px 24px 8px;
   grid-column: 1 / -1;
 }
 
@@ -821,7 +821,7 @@ section.whoweare h2.whoweareheader {
   grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
   gap: 24px;
   background: #ede8e0;
-  padding: 40px;
+  padding: 20px;
 }
 
 .gallery-cta {
