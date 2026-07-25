@@ -151,7 +151,6 @@ h1 {
 .topbar.hero {
   height: 800px;
   position: relative;
-  overflow: hidden;
 }
 
 /* ===== NAV ===== */
@@ -204,7 +203,7 @@ h1 {
 /* "Call Now" rendered as pill button in the nav (ADA: links can be styled like buttons) */
 .nav-call {
   background: #D4A017;
-  color: #1a1107 !important;
+  color: fff !important;
   padding: 9px 16px !important;
   border-radius: 6px;
   font-weight: 600;
@@ -284,6 +283,7 @@ h1 {
 .swiper {
   width: 100%;
   height: 800px;
+  overflow: hidden;
 }
 
 .swiper-slide {
