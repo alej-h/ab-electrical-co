@@ -826,6 +826,7 @@ section.whoweare h2.whoweareheader {
 
 .gallery-cta {
   padding: 20px 0;
+  grid-column: 1 / -1;
 }
 
 .gallery-cta .cta-blockflexbox {
